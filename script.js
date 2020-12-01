@@ -12,7 +12,6 @@ var destDesc = this.document.getElementById["description"]
 
 var destinationDetails = (destName, destLocation, destPhoto, destDesc)
 
-function addDetails(destinationDetails) {
-    document.createElement("div") = destinationDetails;
-    document.getElementById("details").appendChild("")
-}
+let para = document.createElement("p")
+para.innerHTML = destinationDetails;
+document.getElementById("details").appendChild(para)
