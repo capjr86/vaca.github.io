@@ -1,16 +1,13 @@
 document
     .querySelector("input")
-    .addEventListener("submit", handle)
+    .addEventListener("submit", function (event) {
+        event.preventDefault()
+    })
 
-function handle(event) {
-    event.preventDefault();
-}
-
-
-var destName = EventTarget.elements["name"];
-var destLocation = EventTarget.element["location"].value;
-var destPhoto = EventTarget.elements["photo"]
-var destDesc = EventTarget.elements["description"]
+var destName = this.document.getElementById["name"]
+var destLocation = this.document.getElementById["location"]
+var destPhoto = this.document.getElementById["photo"]
+var destDesc = this.document.getElementById["description"]
 
 
 var destinationDetails = (destName, destLocation, destPhoto, destDesc)
